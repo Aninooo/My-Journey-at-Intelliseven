@@ -38,7 +38,7 @@ body {
   position: relative;
   z-index: 1;
   transition: opacity 0.3s ease;
-  color: rgba(5, 5, 5, 0.7);
+  color: rgba(5, 5, 5, 0.9);
 }
 
 .show-text-container .text-container {
@@ -63,7 +63,7 @@ body {
 p {
   font-family: 'Times New Roman', Times, serif;
   font-size: 21px;
-  color: rgba(5, 5, 5, 0.7);
+  color: rgba(5, 5, 5, 0.9);
 }
 
 body {

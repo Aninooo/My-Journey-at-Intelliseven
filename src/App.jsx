@@ -1,8 +1,7 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import pic1 from './assets/pic1.jpg';
 import pic2 from './assets/pic2.jpg';
-import './index.css'; 
+import './index.css';
 
 function App() {
   const [hovered, setHovered] = useState(false);
@@ -11,7 +10,7 @@ function App() {
     <div className={`flex justify-center items-center h-screen ${hovered ? 'show-text-container' : ''}`}>
       <div className="container max-w-2xl px-4 py-8">
         <div className="text-container mb-8">
-          <h1 className="text-3xl font-bold mx-auto">My Journey at Intelliseven</h1>
+          <h1 className="text-3xl font-bold mx-auto">Inside Intelliseven: My OJT Internship Journey</h1>
         </div>
 
         <div className="text-center mb-4">
@@ -32,11 +31,13 @@ function App() {
             <p className="mb-4">
               Joining Intelliseven for my OJT was a decision I'll always cherish. From working on backend projects like the Cats API and DatesFruit Ph to venturing into frontend development with the 1568 Realty website, every task presented an opportunity to learn and improve.
             </p>
-            <p className="mb-4">
-              At the start, I delved into backend development with the Cats API. It was my introduction to using Express.js and MongoDB, and despite the initial difficulties, I found satisfaction in mastering route definitions and middleware usage. As I transitioned to the DatesFruit Ph backend, I faced the challenge of learning a new framework, but with dedication and support, I navigated through it, gaining valuable skills along the way.
+            <p className="mb-4"> At first, I learned about backend development by working on the Cats API Activity. It was my first time using Express.js and MongoDB. Even though it was tough at first, I felt happy when I figured out how to define routes and use middleware.
+
+Then, I started working on the DatesFruit Ph backend. It was a bit tricky because it used a new framework I hadn't used before. But I kept at it and got help when I needed it. Along the way, I learned a lot and gained some really useful skills.
+             
             </p>
             <p>
-              During my time at Intelliseven, I got to try my hand at building the 1568 Realty website. It was a cool change from backend work, letting me create property listings and design how users see the site. This helped me learn new things and see development in a different way.
+            During my time at Intelliseven, I had the opportunity to work on the frontend of the 1568 Realty website, specifically focusing on the admin side. This involved designing and developing interfaces for managing property listings, user accounts, and other administrative tasks. It was a departure from my usual backend work, but it provided me with valuable experience in creating user interfaces for internal tools.
             </p>
             <p>
               Luckily, I had really helpful mentors and coworkers at Intelliseven. They were always there to help me when I ran into problems and cheer me on when things went well. Their support made me feel like I could tackle anything and made learning fun.

@@ -1,3 +1,9 @@
+/* index.css */
+
+body {
+  background-color: rgb(248, 119, 119); /* Set background color to light red for the entire page */
+}
+
 .image-container {
   position: relative;
   width: 50%;
@@ -5,7 +11,7 @@
 }
 
 .image {
-  width: 100%; 
+  width: 100%;
   height: auto;
   position: relative;
   transition: opacity 0.3s ease;
@@ -45,16 +51,18 @@
 }
 
 .section-bottom.show-text-container {
-  margin-top: 100px; 
+  margin-top: 100px;
 }
+
 .section {
-  text-align: center; 
-  margin: 0 auto; 
-  width: 50%; 
-  margin-top: 20px; 
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 20px;
   text-align: justify;
 }
+
 p {
-  font-family: 'Times New Roman', Times, serif; 
-  font-size: 21px; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 21px;
 }

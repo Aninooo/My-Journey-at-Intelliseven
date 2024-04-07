@@ -61,8 +61,14 @@ body {
   margin-top: 20px;
   text-align: justify;
 }
-
 p {
   font-family: 'Times New Roman', Times, serif;
   font-size: 21px;
+}
+body {
+  user-select: none; 
+}
+.text-container h1:hover {
+  color: white; 
+  cursor: pointer; 
 }

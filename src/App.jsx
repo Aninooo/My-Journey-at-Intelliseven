@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import pic1 from './assets/pic1.jpg';
 import pic2 from './assets/pic2.jpg';
+import i7Image from './assets/i7.jpg';
 import './index.css';
 
 function App() {
+  const [loading, setLoading] = useState(true);
   const [hovered, setHovered] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); 
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <LoadingSpinner />;
+  }
 
   return (
     <div className={`flex justify-center items-center h-screen ${hovered ? 'show-text-container' : ''}`}>
@@ -51,6 +64,15 @@ Then, I started working on the DatesFruit Ph backend. It was a bit tricky becaus
           </div>
         </article>
       </div>
+    </div>
+  );
+}
+
+function LoadingSpinner() {
+  return (
+    <div className="loading-spinner">
+      <img src={i7Image} alt="Loading..." />
+      <div className="waves-circle"></div>
     </div>
   );
 }

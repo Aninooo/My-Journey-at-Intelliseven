@@ -130,27 +130,43 @@ function ArticlePage({ onBackButtonClick }) {
 }
 
 function GalleryPage({ onBackButtonClick }) {
+  const [zoomedImage, setZoomedImage] = useState(null);
+
+  const handleImageClick = (src) => {
+    setZoomedImage(src);
+  };
+
+  const handleZoomedClose = () => {
+    setZoomedImage(null);
+  };
+
   return (
     <div className="gallery-page">
       <button className="back-button" onClick={onBackButtonClick}>Back</button>
-      <h1>Gallery</h1>
+      <h1 className="gallery-title">Gallery</h1> 
       <div className="gallery-images">
-        <img src={i71} alt="Image 1" />
-        <img src={i72} alt="Image 2" />
-        <img src={i73} alt="Image 3" />
-        <img src={i74} alt="Image 4" />
-        <img src={i75} alt="Image 5" />
-        <img src={i76} alt="Image 6" />
-        <img src={i78} alt="Image 8" />
-        <img src={i79} alt="Image 9" />
-        <img src={i715} alt="Image 15" />
-        <img src={i77} alt="Image 7" />
-        <img src={i710} alt="Image 10" />
-        <img src={i712} alt="Image 12" />
-        <img src={i713} alt="Image 13" />
-        <img src={i714} alt="Image 14" />
-        <img src={i716} alt="Image 16" />
+        <img src={i71} alt="Image 1" onClick={() => handleImageClick(i71)} className="zoomable-image" />
+        <img src={i72} alt="Image 2" onClick={() => handleImageClick(i72)} className="zoomable-image" />
+        <img src={i73} alt="Image 3" onClick={() => handleImageClick(i73)} className="zoomable-image" />
+        <img src={i74} alt="Image 4" onClick={() => handleImageClick(i74)} className="zoomable-image" />
+        <img src={i75} alt="Image 5" onClick={() => handleImageClick(i75)} className="zoomable-image" />
+        <img src={i76} alt="Image 6" onClick={() => handleImageClick(i76)} className="zoomable-image" />
+        <img src={i78} alt="Image 8" onClick={() => handleImageClick(i78)} className="zoomable-image" />
+        <img src={i79} alt="Image 9" onClick={() => handleImageClick(i79)} className="zoomable-image" />
+        <img src={i715} alt="Image 15" onClick={() => handleImageClick(i715)} className="zoomable-image" />
+        <img src={i77} alt="Image 7" onClick={() => handleImageClick(i77)} className="zoomable-image" />
+        <img src={i710} alt="Image 10" onClick={() => handleImageClick(i710)} className="zoomable-image" />
+        <img src={i712} alt="Image 12" onClick={() => handleImageClick(i712)} className="zoomable-image" />
+        <img src={i713} alt="Image 13" onClick={() => handleImageClick(i713)} className="zoomable-image" />
+        <img src={i714} alt="Image 14" onClick={() => handleImageClick(i714)} className="zoomable-image" />
+        <img src={i716} alt="Image 16" onClick={() => handleImageClick(i716)} className="zoomable-image" />
+        
       </div>
+      {zoomedImage && (
+        <div className="zoomed-image-container" onClick={handleZoomedClose}>
+          <img src={zoomedImage} alt="Zoomed Image" className="zoomed-image" />
+        </div>
+      )}
     </div>
   );
 }

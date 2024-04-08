@@ -2,16 +2,6 @@
 
 This project showcases my journey and experiences during my OJT (On-the-Job Training) internship at Intelliseven. It includes a narrative of the tasks I worked on, the skills I acquired, and the overall impact of the internship on my development as a developer.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 
 During my internship at Intelliseven, I had the opportunity to work on various projects that allowed me to expand my skills in both backend and frontend development. This project serves as a reflection of my journey, detailing the challenges I faced, the knowledge I gained, and the gratitude I have for the mentorship and support provided by the Intelliseven team.

@@ -12,7 +12,11 @@ function App() {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000); 
-    return () => clearTimeout(timer);
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener('contextmenu', event => event.preventDefault());
+    };
   }, []);
 
   if (loading) {

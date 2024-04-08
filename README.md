@@ -36,7 +36,7 @@ During my internship at Intelliseven, I had the opportunity to work on various p
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Aninooo/My-Journey-at-Intelliseven.git
    
 Install dependencies:
 

@@ -57,6 +57,7 @@ function App() {
     setShowFrontPage(false);
     setShowGallery(true);
   };
+  
 
   if (loading) {
     return <LoadingSpinner />;

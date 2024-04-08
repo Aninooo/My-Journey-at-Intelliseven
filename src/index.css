@@ -199,12 +199,13 @@ body {
 .gallery-title {
   text-align: center;
 }
-/* Add space between paragraphs */
+
 .front-page p + p {
-  margin-top: -1rem; /* Adjust this value as needed */
+  margin-top: -1rem; 
 }
 .front-page p {
   font-size: 1rem;
 }
+
 
 

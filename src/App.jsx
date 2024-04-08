@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import pic1 from './assets/pic1.jpg';
 import pic2 from './assets/pic2.jpg';
-import i7Image from './assets/i7.jpg';
+import i7Image from './assets/i7black.png';
 import './index.css';
 
 function App() {

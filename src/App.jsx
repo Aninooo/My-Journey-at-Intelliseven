@@ -81,7 +81,8 @@ function FrontPage({ onJourneyClick, onGalleryClick }) {
   return (
     <div className="front-page">
       <h1>My Journey in Intelliseven</h1>
-      <p>By Bryan N. Lomerio, a computer science student at Camarines Sur Polytechnic Colleges</p>
+      <p>By: Bryan N. Lomerio</p>
+      <p> Course: Bachelor of Science in Computer Science | Camarines Sur Polytechnic Colleges</p>
       <div className="buttons">
         <button className="button" onClick={onJourneyClick}>Read My Journey</button>
         <button className="button" onClick={onGalleryClick}>Gallery</button>
@@ -89,6 +90,7 @@ function FrontPage({ onJourneyClick, onGalleryClick }) {
     </div>
   );
 }
+
 
 function ArticlePage({ onBackButtonClick }) {
   return (
